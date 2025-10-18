@@ -29,8 +29,8 @@ article {
 }
 
 figure > img {
-    height: 250px;
-    width: 250px;
+    height: 210px;
+    width: 210px;
     border-radius: 150px;
 }
 
@@ -180,6 +180,12 @@ nav > ul > li > a > button:hover{
 
     nav {
         width: 50%;
+    }
+}
+
+@media screen and (width:853px) {
+    body {
+        background-color: yellow;
     }
 }
 
