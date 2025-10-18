@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <article class="profile-card-container" data-testid="test-profile-card">
+        <div class="info">
+            <!-- Image -->
+            <figure>
+                <img src="./Assets/Images/1747774066017.jpg" alt="Profile Photo of Owolabi Divine" data-testid="test-user-avatar">
+            </figure>
+
+            <!-- Bio info -->
+            <div class="bio-info">
+                <h2 aria-label="Name of Profile Card Owner" data-testid="test-user-name">Owolabi Divine</h2>
+
+                <p class="bio-paragraph" data-testid="test-user-bio">I am a Frontend Developer that's curious and passionate about implementing designs and building exciting web app interfaces/interactions that fascinates users.</p>
+
+                <span class="time" data-testid="test-user-time">Loading Time.....</span>
+            </div>
+        </div>
+
+
+        <div class="sub-info">
+            <!-- Hobbies -->
+            <section class="hobbies" data-testid="test-user-hobbies">
+                <h1>Hobbies</h1>
+                <ul>
+                    <li>Implementing designs</li>
+                    <li>Building Web apps</li>
+                    <li>Eating</li>
+                    <li>Spending Money</li>
+                </ul>
+            </section>
+
+            <!-- Dislikes -->
+            <section class="dislikes" data-testid="test-user-dislikes">
+                <h1>Dislikes</h1>
+                <ul>
+                    <li>Bugs</li>
+                    <li>Being Broke</li>
+                    <li>Being Stressed</li>
+                    <li>Dishonesty</li>
+                </ul>
+            </section>
+        </div>
+
+        <nav data-testid="test-user-social-links">
+            <ul>
+                <li>
+                    <a href="" target="_blank" data-testid="test-user-social-github">
+                        <button>
+                            <figure>
+                                <img src="./Assets/Images/github-logo-02.webp" alt="Github" class="nav-img">
+                                <figcaption>Github</figcaption>
+                            </figure>
+                        </button>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" data-testid="test-user-social-linkedin">
+                        <button>
+                            <figure>
+                                <img src="./Assets/Images/Linkedin-PNG-High-Quality-Image.png" alt="LinkedIn" class="nav-img">
+                                <figcaption>LinkedIn</figcaption>
+                            </figure>                        
+                        </button>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" data-testid="test-user-social-twitter">
+                        <button>
+                            <figure>
+                                <img src="./Assets/Images/x-logo-00.webp" alt="X(twitter)" class="nav-img">
+                                <figcaption>X (twitter)</figcaption>
+                            </figure>
+                        </button>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+    </article>
+
+
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>
