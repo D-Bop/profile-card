@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    article {
+        margin-top: 1em;
+        width: 90%;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .info > figure {
+        margin-top: 1em;
+    }
+
+    .bio-info {
+        width: 90%;
+    }
+
+    .bio-info > h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .sub-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+
+    nav {
+        width: 100%;
+    }
+
+    nav > ul{
+        margin: auto;
+        display: flex;
+        justify-items: center;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .info > figure > img {
+        height: 150px;
+        width: 150px;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    form {
+        width: 60%;
+    }
+}

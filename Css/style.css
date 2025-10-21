@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 article {
     margin: auto;
     /* background-color: beige; */
@@ -122,6 +126,7 @@ nav > ul > li > a > button:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .hobbies, .dislikes {
     width: 90%;
     /* background-color: gray; */
@@ -137,55 +142,26 @@ nav > ul > li > a > button:hover{
     margin-left: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
-    article {
-        margin-top: 1em;
-        width: 90%;
-    }
-    .info {
-        display: flex;
-        flex-direction: column;
-    }
-    .info > figure {
-        margin-top: 1em;
-    }
-
-    .bio-info {
-        width: 90%;
-    }
-
-    .bio-info > h2 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .sub-info {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-
-
-    nav {
-        width: 100%;
-    }
-
-    nav > ul{
-        margin: auto;
-        display: flex;
-        justify-items: center;
-    }
+.btn {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: gray;
+    margin: 1.5em auto;
+    text-align: center;
+    width: 150px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #DFEEEE;
+    cursor: pointer;
+    border: 2px solid gray;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-    .info > figure > img {
-        height: 150px;
-        width: 150px;
-    }
-
-    nav {
-        width: 50%;
-    }
+.btn:hover {
+    background-color: #DFEEEE;
+    color: gray;
+    box-shadow: 10px 10px 10px rgb(114, 110, 110);
+    border: 2px solid gray;
+    text-decoration: none;
 }
 

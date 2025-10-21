@@ -1,0 +1,89 @@
+body {
+    background-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-image: linear-gradient(to left bottom, #808080, #8d8d8e, #999a9d, #a6a8ab, #b2b6ba);
+    box-shadow: 5px 5px 10px gray;
+    width: 30%;
+    margin: auto;
+    margin-top: 7em;
+    align-items: center;
+    padding: 20px;
+    color: #DFEEEE;
+}
+
+form h1 {
+    text-align: center;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+input{
+    display: block;
+    padding: 12px;
+    margin-top: 1em;
+    background-color: white;
+    border: 2px solid rgb(114, 110, 110);
+    color: gray;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+input:active {
+    margin: 2px solid blue;
+}
+textarea {
+    display: block;
+    margin-top: 1em;
+    border-radius: 7px;
+    padding: 12px;
+}
+
+form > button {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: gray;
+    margin: 1.5em auto;
+    text-align: center;
+    width: 150px;
+    font-size: larger;
+    font-weight: bolder;
+    color: #DFEEEE;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+/* form > button:hover {
+    display: block;
+    box-shadow: 10px 10px 10px rgb(80, 62, 62);
+    background-color: #DFEEEE;
+    color: gray;
+    border: none;
+    padding: 12px 20px;
+} */
+
+form > button:hover {
+    background-color: #DFEEEE;
+    color: gray;
+    box-shadow: 10px 10px 10px rgb(114, 110, 110);
+    border: 2px solid gray;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.errorBorder {
+    border: 2px solid red;
+}
