@@ -2,8 +2,7 @@ console.log("console is working now")
 
 const form = document.getElementById("form")
 const name = document.getElementById("name")
-const emailValue = document.querySelector("[data-testid='test-contact-email']").value
-console.log(emailValue)
+const email = document.querySelector("[data-testid='test-contact-email']")
 const emailError = document.querySelector("[data-testid='test-contact-error-email']")
 const subject = document.getElementById("subject")
 const message = document.getElementById("message")
@@ -11,6 +10,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
+
     console.log("form submitted")
     if (name.value === "") {
         const nameError = document.querySelector("[data-testid='test-contact-error-name']");
@@ -20,8 +20,9 @@ form.addEventListener("submit", (e) => {
         console.log("name is empty")
     }
 
+    const emailValue = email.value.trim();
+    console.log(`Email Value: ${emailValue}`)
     if (!emailValue){
-
         console.log(emailValue)
         
         emailError.classList.add("errorMessage")

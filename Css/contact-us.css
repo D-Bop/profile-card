@@ -49,6 +49,11 @@ textarea {
     padding: 12px;
 }
 
+textarea::placeholder {
+    color: #999; /* Ensure visible color */
+    opacity: 1; /* Default opacity */
+}
+
 form > button {
     display: block;
     padding: 15px 20px;
