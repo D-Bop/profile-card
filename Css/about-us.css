@@ -1,0 +1,108 @@
+body {
+    background-color: #DDDDDD;
+}
+.card {
+    margin: auto;
+    width: 70%;
+    background-image: linear-gradient(to right top, #808080, #838383, #878687, #8a8a8a, #8d8d8e);
+    padding: 20px;
+    color:   #DDDDDD;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: 40% 5% 55%;
+    place-items: center;
+    padding: 20px;
+    /* background-color: beige; */
+    padding-left: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.bio img {
+    height: 350px;
+    width: 350px;
+    border-radius: 250px;
+    border: 10px solid gray;
+    /* background-color: red; */
+    /* padding: 20px; */
+}
+
+.bio .line {
+    width: 4px;
+    height: 350px;
+    background-color: gray;
+}
+
+.bio h1 {
+    width: 100%;
+    /* padding: 20px; */
+    font-size: 5em;
+    /* background-color: aqua; */
+}
+
+.sub-bio {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+.sub-bio p {
+    width: 100%;
+    font-size: 2em;
+}
+
+.goals,
+.confidence-level,
+.note,
+.extra-thoughts {
+    margin: auto;
+    margin-top: 1em;
+    width: 70%;
+    padding: 20px;
+}
+
+.note {
+    /* background-color: #3a4556; */
+    padding: 3px 20px;
+    margin-top: 10px;
+}
+
+.note p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.extra-thoughts {
+    /* background-color: red; */
+    padding-top: 2px;
+}
+
+.extra-thoughts p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+.goals h1,
+.confidence-level h1,
+.note h1,
+.extra-thoughts h1 {
+    font-size: 3em;
+}
+
+.goals li,
+.confidence-level li {
+    line-height: 3em;
+    font-size: larger;
+    font-weight: 500;
+}

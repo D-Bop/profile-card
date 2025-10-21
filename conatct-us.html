@@ -13,25 +13,25 @@
         <h1>CONTACT ME</h1>
         <div class="input">
             <label for="FullName">Full Name:</label>
-            <input type="text" id="name" data-testid="test-contact-name" placeholder="Enter your Fullname" >
+            <input type="text" id="name" data-testid="test-contact-name" placeholder="Enter your Fullname" aria-describedby="name-error">
             <div class="namError" data-testid="test-contact-error-name"></div>
         </div>
 
         <div class="input">
             <label for="email">Email:</label>
-            <input type="text" id="email" data-testid="test-contact-email" placeholder="Enter your email">
+            <input type="text" id="email" data-testid="test-contact-email" placeholder="Enter your email" aria-describedby="email-error">
             <div class="emailError" data-testid="test-contact-error-email"></div>
         </div>
 
         <div class="input">
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" data-testid="test-contact-subject" placeholder="Enter the subject">
+            <input type="text" id="subject" data-testid="test-contact-subject" placeholder="Enter the subject" aria-describedby="subject-error">
             <div class="error" data-testid="test-contact-error-subject"></div>
         </div>
 
         <div class="input">
             <label for="message">Message:</label>
-            <textarea rows="10" cols="10" name="" id="message" data-testid="test-contact-message" placeholder="write a message">
+            <textarea rows="10" cols="10" name="" id="message" data-testid="test-contact-message" placeholder="write a message" aria-describedby="message-error">
             </textarea>
             <div class="error" data-testid="test-contact-error-message"></div>
         </div>

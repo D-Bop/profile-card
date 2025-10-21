@@ -41,4 +41,24 @@ form.addEventListener("submit", (e) => {
         subjectError.classList.add("errorMessage")
         subject.classList.add("errorBorder")
     }
+
+    if(message.value < 11) {
+        console.log("message is too short")
+        const messageError = document.querySelector("[data-testid='test-contact-error-message'")
+        messageError.innerHTML = `<p>Message must be more than 10 characters</p>`
+        messageError.classList.add("errorMessage")
+        message.classList.add("errorBorder")
+    }
+
+    if(name.value && message.value && email.value && subject.value) {
+        console.log("successs")
+        const successMessage = document.querySelector("[data-testid='test-contact-success']")
+        successMessage.innerHTML = `<p>Message Successfully submitted</p>`
+        successMessage.classList.add("success")
+        form.reset()
+
+        setTimeout(() => {
+            successMessage.classList.add("hidden")
+        }, 3000)
+    }
 })

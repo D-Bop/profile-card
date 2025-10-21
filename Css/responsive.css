@@ -40,10 +40,81 @@
     form {
         width: 80%;
     }
+
+    .card > header > h1 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .bio .line {
+        margin-top: 1em;
+        width: 98%;
+        height: 5px;
+        display: none;
+    }
+
+    .bio h1 {
+        font-size: 3.5em;
+    }
+
+    .sub-bio {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sub-bio p {
+        width: 97%;
+        font-weight: 300;
+        font-size: 1em;
+        margin: auto;
+    }
+
+    .goals,
+    .confidence-level,
+    .note,
+    .extra-thoughts {
+        width: 90%;
+        margin-top: 1em;
+    }
+
+    .goals h1,
+    .confidence-level h1,
+    .note h1,
+    .extra-thoughts h1 {
+        font-size: 1em;
+        font-weight: 900;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .goals li,
+    .confidence-level li {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    .note p,
+    .extra-thoughts p {
+        font-size: 0.8em;
+        font-weight: 400;
+    }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .info > figure > img {
         height: 150px;
         width: 150px;
@@ -55,5 +126,26 @@
 
     form {
         width: 60%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .bio {
+        width: 90%;
+    }
+
+    .bio img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .bio h1 {
+        font-size: 5em;
+    }
+
+    .sub-bio {
+        width: 90%;
     }
 }
