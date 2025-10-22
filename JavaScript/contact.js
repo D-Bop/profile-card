@@ -15,8 +15,23 @@ form.addEventListener("submit", (e) => {
 
     let isValid = true;
 
+    const messageInput = document.querySelector("[data-testid='test-contact-message']")
+    console.log(messageInput.value)
+
+    if(messageInput.value.trim() === "") {
+        isValid = false;
+        console.log("Please enter a valid message")
+        messageError.textContent = "Please enter a valid message"
+        messageError.classList.add("errorMessage")
+        messageInput.classList.add("errorBorder")
+    } else if (messageInput.value.length < 10) {
+        isValid = false;
+        console.log("message must be more than 10 characters")
+        messageError.textContent = "Message must be more than 10 characters"
+        messageError.classList.add("errorMessage")
+    }
+
     if (name.value === "") {
-        
         nameError.classList.add("errorMessage");
         name.classList.add("errorBorder")
         nameError.textContent = "Please input your name!"
@@ -48,24 +63,9 @@ form.addEventListener("submit", (e) => {
         isValid = false;
     }
 
-    const messageInput = document.getElementById("message")
-    console.log(message) 
-    console.log(messageInput.value)
 
-    if(messageInput.value === "") {
-        console.log(messageInput)
-        console.log("message is empty")
-        messageError.textContent = "Message can not be empty";
-        messageError.classList.add("errorMessage")
-        message.classList.add("errorBorder")
-        isValid = false;
-    } else if (message.value.length < 11) {
-        console.log("message is too short")
-        isValid = false;
-        messageError.textContent = "Message should be at least 10 characters"
-        messageError.classList.add("errorMessage")
-        message.classList.add("errorBorder")
-    }
+
+
     
     if(isValid) {
         console.log("successs")
