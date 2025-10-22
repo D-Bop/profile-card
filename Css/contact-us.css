@@ -50,8 +50,8 @@ textarea {
 }
 
 textarea::placeholder {
-    color: #999; /* Ensure visible color */
-    opacity: 1; /* Default opacity */
+    color: #888;
+    opacity: 1; /* Ensure visibility */
 }
 
 form > button {
@@ -61,7 +61,7 @@ form > button {
     background-color: gray;
     margin: 1.5em auto;
     text-align: center;
-    width: 150px;
+    width: 200px;
     font-size: larger;
     font-weight: bolder;
     color: #DFEEEE;

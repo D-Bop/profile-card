@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <script defer src="./JavaScript/contact.js"></script>
     <link rel="stylesheet" href="./Css/contact-us.css">
     <link rel="stylesheet" href="./Css/responsive.css">
 </head>
 <body>
-    <form id="form" action="./conatct-us.html">
+    <form id="form" novalidate>
         <h1>CONTACT ME</h1>
         <div class="input">
             <label for="FullName">Full Name:</label>
-            <input type="text" id="name" data-testid="test-contact-name" placeholder="Enter your Fullname" aria-describedby="name-error">
-            <div class="namError" data-testid="test-contact-error-name"></div>
+            <input type="text" name="name" id="name" data-testid="test-contact-name" placeholder="Enter your Fullname" aria-describedby="name-error" aria-invalid="false">
+            <div id="name-error" data-testid="test-contact-error-name" class="error"></div>
         </div>
 
         <div class="input">
             <label for="email">Email:</label>
-            <input type="text" id="email" data-testid="test-contact-email" placeholder="Enter your email" aria-describedby="email-error">
-            <div class="emailError" data-testid="test-contact-error-email"></div>
+            <input type="text" id="email" name="email" data-testid="test-contact-email" placeholder="Enter your email" aria-describedby="email-error" aria-invalid="false">
+            <div id="email-error" data-testid="test-contact-error-email" class="error"></div>
         </div>
 
         <div class="input">
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" data-testid="test-contact-subject" placeholder="Enter the subject" aria-describedby="subject-error">
-            <div class="error" data-testid="test-contact-error-subject"></div>
+            <input type="text" id="subject" name="subject" data-testid="test-contact-subject" placeholder="Enter the subject" aria-describedby="subject-error" aria-invalid="false">
+            <div id="subject-error" data-testid="test-contact-error-subject" class="error"></div>
         </div>
 
         <div class="input">
             <label for="message">Message:</label>
-            <textarea rows="10" cols="10" name="" id="message" data-testid="test-contact-message" placeholder="write a message" aria-describedby="message-error">
+            <textarea rows="10" cols="30" name="message" id="message" data-testid="test-contact-message" placeholder="write a message" aria-describedby="message-error" aria-invalid="false">
             </textarea>
-            <div class="error" data-testid="test-contact-error-message"></div>
+            <div id="message-error" data-testid="test-contact-error-message" class="error"></div>
         </div>
 
-        <button data-testid="test-contact-submit" type="submit" >Submit</button>
-        <div class="success" data-testid="test-contact-success"></div>
+        <button data-testid="test-contact-submit" type="submit" >Send Message</button>
+        <div class="success" data-testid="test-contact-success" tabindex="0"></div>
     </form>
+
+
+
+    <script src="./JavaScript/contact.js"></script>
 </body>
 </html>
